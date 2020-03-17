@@ -24,8 +24,10 @@ namespace POS.WebAPI.Controllers
                 return userId;
             }
         }
+
         [Route("api/Pizza/AllPizzas") ]
         public IHttpActionResult GetPizzas()
+
         {
             PizzaService pizzaService = CreatePizzaService();
             var pizzas = pizzaService.GetAllPizzas();
